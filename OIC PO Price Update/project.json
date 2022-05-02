@@ -1,0 +1,88 @@
+{
+  "name": "OIC PO Price Update",
+  "description": "OIC PO Price Update",
+  "main": "Main.xaml",
+  "dependencies": {
+    "Microsoft.Activities": "[1.0.1]",
+    "UiPath.Database.Activities": "[1.1.6660.26865]",
+    "UiPath.Excel.Activities": "[2.5.1]",
+    "UiPath.Mail.Activities": "[1.12.2]",
+    "UiPath.PDF.Activities": "[1.3.0]",
+    "UiPath.System.Activities": "[21.10.3]",
+    "UiPath.Terminal.Activities": "[1.3.0]",
+    "UiPath.Testing.Activities": "[1.4.6]",
+    "UiPath.UIAutomation.Activities": "[21.4.1-preview]",
+    "UiPath.WebAPI.Activities": "[1.11.0]",
+    "UiPath.Word.Activities": "[1.3.0]",
+    "UiPathTeam.SharePoint.Activities": "[1.7.0]"
+  },
+  "webServices": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "21.10.4.0",
+  "projectVersion": "1.0.3",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfos": []
+  },
+  "arguments": {
+    "input": [
+      {
+        "name": "in_screenshotMessage",
+        "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "required": false,
+        "hasDefault": false
+      },
+      {
+        "name": "in_BusinessRuleException",
+        "type": "UiPath.Core.BusinessRuleException, UiPath.System.Activities, Version=21.10.3.0, Culture=neutral, PublicKeyToken=null",
+        "required": false,
+        "hasDefault": false
+      },
+      {
+        "name": "in_Passwords",
+        "type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Security.SecureString, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "required": false,
+        "hasDefault": false
+      },
+      {
+        "name": "in_Config",
+        "type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "required": false,
+        "hasDefault": false
+      },
+      {
+        "name": "in_SystemException",
+        "type": "System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "required": false,
+        "hasDefault": false
+      }
+    ],
+    "output": [
+      {
+        "name": "in_BusinessRuleException",
+        "type": "UiPath.Core.BusinessRuleException, UiPath.System.Activities, Version=21.10.3.0, Culture=neutral, PublicKeyToken=null"
+      },
+      {
+        "name": "in_SystemException",
+        "type": "System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      }
+    ]
+  },
+  "expressionLanguage": "VisualBasic"
+}
